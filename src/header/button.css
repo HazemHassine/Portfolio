@@ -1,0 +1,26 @@
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 0 0 teal;
+    }
+    100% {
+      box-shadow: 0 0 5px 5px teal;
+    }
+  }
+  
+  .animate-glow {
+    animation: glow 4s infinite alternate;
+  }
+  
+@keyframes glow-bottom {
+  0% {
+    box-shadow: 0 0 5px 0 teal;
+  }
+  100% {
+    box-shadow: 0 0 5px 0 teal;
+  }
+}
+
+.animate-glow-bottom {
+  animation: glow 4s infinite alternate;
+}
+  
