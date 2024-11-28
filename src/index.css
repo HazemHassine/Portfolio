@@ -9,10 +9,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(35,35,35);
-}
+  background-color: rgb(30, 30, 30);
+  background-image: radial-gradient(rgba(128, 128, 128, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+  cursor: none;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+html *,
+body * {
+  cursor: none;
 }

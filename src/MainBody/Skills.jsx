@@ -144,7 +144,7 @@ const Skills = () => {
             {skills.map((skill) => (
                 <img
                     key={skill.name}
-                    className="h-8 mx-2"
+                    className="h-8 mx-2 drop-shadow-[0_0_30px_rgba(0,0,0,0.7)]"
                     src={skill.src}
                     alt={skill.name}
                 />
