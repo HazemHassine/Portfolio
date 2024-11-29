@@ -8,6 +8,15 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 
 function MainBody() {
+    const explanations = {
+        bac: {
+            header: "Mathematics Bacalureat. Obtained July 2020",
+            description: <div><p>4 year highschol experience that was full of joy brought by amazing friends.</p><p><bold>Relevant Coursework:&nbsp;</bold>Biology, Probability & Statistics, Calculus, Algebra, Diﬀerential equations, Trigonometry,
+Electricity and Magnetism, Mechanical Systems, Chemistry</p></div>
+        }
+    }
+
+
     return (
         <div className="px-[5%] md:px-[25%] sm:px-[5%]">
             <SubSectionText text="About Me" />
@@ -84,7 +93,7 @@ function MainBody() {
             </ul>
             <SubSectionText text="Research" />
             <ul>
-                <ArrowElement>
+                <ArrowElement more={explanations.education}>
                     <p className="flex">
                         Advancing Low-Resource Healthcare through Multi-Domain Federated
                         Learning, <GlowingLink text="Link" link="https://drive.google.com/file/d/1Ix_5tSBENqvzqQR9TCKYZN18e8zSIEJd/view?usp=sharing" />

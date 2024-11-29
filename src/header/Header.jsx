@@ -5,9 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 
 function Header() {
   const handleButtonClick = () => {
-    window.location.href = "https://github.com/HazemHassine/";
+    window.open("https://github.com/HazemHassine/Portfolio", "_blank", "noopener,noreferrer");
   };
-  // bg-[rgba(0,0,0,0.3)]
+
   return (
     <div className="flex lg:items-start md:items-start sm:items-center flex-col pt-4 bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-[rgba(255,255,255,0.0)] md:px-[25%] px-[5%] h-fit sm:text-left lg:text-center md:text-center">
       <h2 className="text-6xl font-bold text-teal-500 drop-shadow-[0_0_30px_rgba(20,144,186,0.7)]">
@@ -33,6 +33,10 @@ function Header() {
             "",
             500,
             "A developer",
+            2000,
+            "",
+            500,
+            "A boyfriend for the best girl in the world ❤️ ❤️ ❤️ ",
             2000,
             "",
             500,

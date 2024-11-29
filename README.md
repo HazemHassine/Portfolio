@@ -21,12 +21,6 @@ npm install
 npm start
 ```
 
-### Run Tests
-
-```bash
-npm test
-```
-
 ### Build for Production
 
 ```bash
