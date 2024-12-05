@@ -1,15 +1,21 @@
-import Header from "./header/Header"
-import MainBody from "./MainBody/MainBody"
+import React from 'react';
+import Header from "./header/Header";
+import MainBody from "./MainBody/MainBody";
 import Footer from "./MainBody/Footer";
-import Cursor from "./Cursor";
-import "./CursorStyle.css"
+import DynamicBackground from "./DynamicBackground";
+import FloatingNav from "./FloatingNav";
+
 export default function App() {
   return (
-    <div className="flex flex-col">
-      <Header />
-      <MainBody/>
-      <Footer/>
-      <Cursor/>
+    <div className="relative flex flex-col min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900">
+      <DynamicBackground />
+      <div className="relative z-10 flex flex-col min-h-screen backdrop-blur-sm">
+        <Header id="home" />
+        <MainBody />
+        <Footer />
+        <FloatingNav />
+      </div>
     </div>
-  )
+  );
 }
+

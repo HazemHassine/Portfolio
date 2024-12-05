@@ -81,19 +81,19 @@ function Projects() {
     },
   ];
   return (
-    <div>
-      {projects.map((project) => (
-        <div className="mt-2">
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {projects.map((project, index) => (
+        <div key={index} className="bg-gray-800 p-6 rounded-lg">
           <ArrowElement>
-            <div className="text-xl">
+            <div className="text-xl mb-2">
               <GlowingLink
                 link={project.link}
                 text={project.name}
-              ></GlowingLink>
+              />
             </div>
-            <div className="mt-1 pl-4">
-              <h4 className="text-gray-300 mt-1">Status: {project.status}</h4>
-              <p className="mt-1">{project.description}</p>
+            <div>
+              <h4 className="text-gray-400 mb-2">Status: {project.status}</h4>
+              <p className="text-sm">{project.description}</p>
             </div>
           </ArrowElement>
         </div>

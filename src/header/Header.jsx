@@ -1,7 +1,6 @@
-import React from "react";
-import { FaGithub } from "react-icons/fa";
-import "./button.css";
-import { TypeAnimation } from "react-type-animation";
+import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { TypeAnimation } from 'react-type-animation';
 
 function Header() {
   const handleButtonClick = () => {
@@ -9,64 +8,48 @@ function Header() {
   };
 
   return (
-    <div className="flex lg:items-start md:items-start sm:items-center flex-col pt-4 bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-[rgba(255,255,255,0.0)] md:px-[25%] px-[5%] h-fit sm:text-left lg:text-center md:text-center">
-      <h2 className="text-6xl font-bold text-teal-500 drop-shadow-[0_0_30px_rgba(20,144,186,0.7)]">
-        Mohamed Hazem Hassine
-      </h2>
-      <h4 className="stext-lg text-gray-300">
-        <TypeAnimation
-          sequence={[
-            "A machine learning enthusiast",
-            2000, // Wait 2 seconds
-            "",
-            500, // Pause briefly before the next phrase
-            "A researcher",
-            2000,
-            "",
-            500,
-            "A student",
-            2000,
-            "",
-            500,
-            "Music lover",
-            2000,
-            "",
-            500,
-            "A developer",
-            2000,
-            "",
-            500,
-            "A boyfriend for the best girl in the world ❤️ ❤️ ❤️ ",
-            2000,
-            "",
-            500,
-            "A bookworm",
-            2000,
-            "",
-            500,
-            "Camper and adventurer",
-            2000,
-            "",
-            500,
-          ]}
-          wrapper="span"
-          speed={70}
-          deletionSpeed={50}
-          repeat={Infinity}
-        />
-      </h4>
-      <button
-        className="bg-black text-gray-300 w-fit mt-2 text-sm font-bold py-2 px-4 rounded-full border-2 border-transparent hover:border-teal-500 hover:text-teal-500 transition-all duration-300 animate-glow"
-        onClick={handleButtonClick}
-      >
-        <FaGithub className="inline-block mr-2" />
-        View Project on GitHub
-      </button>
-      <div className="mt-6 -z-10">
-        <div className="absolute left-0 w-screen h-3 blur-3xl opacity-50 bg-teal-500 " />
+    <header className="relative py-16 bg-gradient-to-b to-teal-600/0 from-gray-900/50 backdrop-blur-md">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h1 className="text-5xl font-bold mb-4 text-white drop-shadow-[0_0_30px_rgba(20,144,186,0.7)]">
+          Mohamed Hazem Hassine
+        </h1>
+        <h2 className="text-xl text-teal-300 mb-6">
+          <TypeAnimation
+            sequence={[
+              "A machine learning enthusiast",
+              2000,
+              "A researcher",
+              2000,
+              "A student",
+              2000,
+              "Music lover",
+              2000,
+              "A developer",
+              2000,
+              "A boyfriend for the best girl in the world ❤️ ❤️ ❤️ ",
+              2000,
+              "A bookworm",
+              2000,
+              "Camper and adventurer",
+              2000,
+            ]}
+            wrapper="span"
+            speed={70}
+            deletionSpeed={50}
+            repeat={Infinity}
+          />
+        </h2>
+        <button
+          className="bg-teal-500/20 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-teal-400/40 transition-all duration-300 backdrop-blur-sm"
+          onClick={handleButtonClick}
+        >
+          <FaGithub className="inline-block mr-2" />
+          View Project on GitHub
+        </button>
       </div>
-    </div>
+    </header>
   );
 }
 
 export default Header;
+

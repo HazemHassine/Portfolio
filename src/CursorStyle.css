@@ -1,32 +1,37 @@
-/* play with vars for different effets */
-:root {
-    --color-cursor: 0, 0, 0;
-    --cursor-outline-shade: 0.3;
-    --cursor-size: 15px;
-    --cursor-outline-size: 12px;
-  }
-
-#cursor-dot,
-#cursor-dot-outline {
-  z-index: 999;
+.cursor-dot,
+.cursor-dot-outline {
   pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-#cursor-dot {
-  width: var(--cursor-size);
-  height: var(--cursor-size);
-  background-color: rgba(var(--color-cursor), 1);
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-#cursor-dot-outline {
-  width: var(--cursor-outline-size);
-  height: var(--cursor-outline-size);
-  background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
+.cursor-dot.visible,
+.cursor-dot-outline.visible {
+  opacity: 1;
+}
+
+.cursor-dot.enlarged {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.cursor-dot-outline.enlarged {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
