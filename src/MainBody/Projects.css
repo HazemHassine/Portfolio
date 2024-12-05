@@ -1,0 +1,12 @@
+/* Add these styles to your CSS file */
+.overflow-hidden {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+  
+  

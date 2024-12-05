@@ -5,6 +5,12 @@ import GlowingLink from "./GlowingLink";
 function Projects() {
   const projects = [
     {
+      name: "Youtube video summarizer and library with AI",
+      link: "https://github.com/HazemHassine/yt-summary",
+      status: "In going",
+      description: "Enables you to summarize youtube videos, make an account and save your summaries and alot more to come. A full stack web application written in React.js and tailwind. Backend using Node.js and integration with firebase"
+    },
+    {
       name: "TaxiService",
       link: "https://github.com/HazemHassine/TaxiService",
       status: "Completed",
@@ -79,7 +85,7 @@ function Projects() {
       description:
         "Applying various filters to images using C++ and the STB library",
     },
-  ];
+    ];
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {projects.map((project, index) => (

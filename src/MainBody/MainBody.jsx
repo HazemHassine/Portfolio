@@ -8,6 +8,7 @@ import ArrowElement from "./ArrowElement";
 import GlowingLink from "./GlowingLink";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import ProfileComponent from "./ProfileComponent";
 
 function FadeInSection({ children }) {
   const controls = useAnimation();
@@ -57,6 +58,7 @@ function MainBody() {
   return (
     <main className="flex-grow px-4 md:px-[25%] py-16">
       <FadeInSection>
+      {/* <ProfileComponent/> */}
         <section className="mb-16">
           <SubSectionText id="about" text="About Me" />
           <div className="grid md:grid-cols-2 gap-8 items-start">
