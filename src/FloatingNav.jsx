@@ -28,7 +28,7 @@ const FloatingNav = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute bottom-full right-0 mb-4 space-y-2"
+            className="absolute flex flex-col bottom-full right-0 mb-4 space-y-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ const FloatingNav = () => {
 
 const NavButton = ({ icon, onClick, label }) => (
   <motion.button
-    className="bg-gray-800 text-white p-3 rounded-full shadow-md flex items-center space-x-2"
+    className="bg-gray-800 text-white p-3 rounded-full shadow-md flex items-center"
     whileHover={{ scale: 1.05, x: -8 }}
     whileTap={{ scale: 0.95 }}
     onClick={onClick}

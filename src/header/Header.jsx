@@ -8,7 +8,7 @@ function Header() {
   };
 
   return (
-    <header className="relative py-16 bg-gradient-to-b to-teal-600/0 from-gray-900/50 backdrop-blur-md">
+    <header id="home" className="relative py-16 bg-gradient-to-b to-teal-600/0 via-teal-200/0 from-gray-900/50 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h1 className="text-5xl font-bold mb-4 text-white drop-shadow-[0_0_30px_rgba(20,144,186,0.7)]">
           Mohamed Hazem Hassine

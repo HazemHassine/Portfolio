@@ -8,13 +8,12 @@ import ArrowElement from "./ArrowElement";
 import GlowingLink from "./GlowingLink";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import ProfileComponent from "./ProfileComponent";
 
 function FadeInSection({ children }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.2, // Trigger when 20% of the section is visible
-    triggerOnce: true, // Trigger only once
+    threshold: 0.2,
+    triggerOnce: true,
   });
 
   React.useEffect(() => {
@@ -36,29 +35,10 @@ function FadeInSection({ children }) {
 }
 
 function MainBody() {
-  const explanations = {
-    bac: {
-      header: "Mathematics Bacalureat. Obtained July 2020",
-      description: (
-        <div>
-          <p>
-            4 year highschool experience that was full of joy brought by
-            amazing friends.
-          </p>
-          <p>
-            <strong>Relevant Coursework:&nbsp;</strong>Biology, Probability &
-            Statistics, Calculus, Algebra, Differential equations, Trigonometry,
-            Electricity and Magnetism, Mechanical Systems, Chemistry
-          </p>
-        </div>
-      ),
-    },
-  };
 
   return (
     <main className="flex-grow px-4 md:px-[25%] py-16">
       <FadeInSection>
-      {/* <ProfileComponent/> */}
         <section className="mb-16">
           <SubSectionText id="about" text="About Me" />
           <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -66,7 +46,7 @@ function MainBody() {
               <BioElement title="Name" text="Mohamed Hazem Hassine" />
               <BioElement title="Born" text="2001" />
               <BioElement title="Birthplace" text="Sayada, Tunisia 🇹🇳" />
-              <BioElement title="Domicile" text="Lamta, Tunisia 🇹🇳" />
+              <BioElement title="Domicile" text="Passau, Germany 🇩🇪" />
               <BioElement
                 title="Email"
                 id="contact"
@@ -126,13 +106,18 @@ function MainBody() {
         <section className="mb-16">
           <SubSectionText text="Education" />
           <ul className="space-y-6">
-            <li>
+          <li>
               <ArrowElement>
-                <p className="font-semibold">Mathematics Bacalaureat</p>
-                <p className="text-gray-400 mt-1">Sayada Highschool 2020</p>
+                <p className="font-semibold">
+                  Masters in Computer Science
+                </p>
+                <p className="text-gray-400 mt-1">
+                  Univeristy of Passau,
+                  2024 - Current
+                </p>
               </ArrowElement>
             </li>
-            <li>
+          <li>
               <ArrowElement>
                 <p className="font-semibold">
                   Bachelor in Computer Science, Software Engineering and
@@ -140,10 +125,17 @@ function MainBody() {
                 </p>
                 <p className="text-gray-400 mt-1">
                   Higher Institut of Mathematics and Informatics Monastir,
-                  2020-2023
+                  2020 - 2023
                 </p>
               </ArrowElement>
             </li>
+            <li>
+              <ArrowElement>
+                <p className="font-semibold">Mathematics Bacalaureat</p>
+                <p className="text-gray-400 mt-1">Sayada Highschool 2020</p>
+              </ArrowElement>
+            </li>
+            
           </ul>
         </section>
       </FadeInSection>
@@ -171,9 +163,26 @@ function MainBody() {
             </li>
             <li>
               <ArrowElement>
+                <p className="font-semibold">Machine Learning Researcher Intern</p>
+                <div className="text-gray-400 mt-1">
+                  <p>
+                  Brain And SIgnal Research & Analysis Lab, (
+                    <a
+                      className="text-teal-300 hover:text-teal-200"
+                      href="https://basira-lab.com/"
+                    >
+                      Basira Lab
+                    </a>
+                    ), Feb 2023 - Aug 2023
+                  </p>
+                </div>
+              </ArrowElement>
+            </li>
+            <li>
+              <ArrowElement>
                 <p className="font-semibold">Part-time Freelance Web Developer</p>
                 <div className="text-gray-400 mt-1">
-                  <p>Remote, (ReactJs, TailwindCss, NextJs), 2021-2024</p>
+                  <p>Remote, (ReactJs, TailwindCss, NextJs), 2021-2023</p>
                 </div>
               </ArrowElement>
             </li>
