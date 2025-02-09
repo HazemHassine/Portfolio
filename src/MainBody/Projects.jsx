@@ -5,7 +5,7 @@ import GlowingLink from "./GlowingLink";
 function Projects() {
   const projects = [
     {
-      name: "Portfolio",
+      name: "Pediatric Recommendation System",
       link: "https://github.com/HazemHassine/pediatric-recommendation-system",
       status: "Completed",
       description:
@@ -15,7 +15,7 @@ function Projects() {
       name: "Youtube video summarizer and library with AI",
       link: "https://github.com/HazemHassine/yt-summary",
       status: "Completed",
-      description: "Enables you to summarize youtube videos, make an account and save your summaries and alot more to come. A full stack web application written in React.js and tailwind. Backend using Node.js and integration with firebase"
+      description: "Enables you to summarize youtube videos, make an account and save & share your summaries and alot more to come. A full stack web application written in React.js and tailwind using the Next.JS framework. Connected to a MongoDB database and deployed.",
     },
     {
       name: "TaxiService",
