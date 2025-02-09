@@ -5,9 +5,16 @@ import GlowingLink from "./GlowingLink";
 function Projects() {
   const projects = [
     {
+      name: "Portfolio",
+      link: "https://github.com/HazemHassine/pediatric-recommendation-system",
+      status: "Completed",
+      description:
+        "A recommendation system for pediatricians, parents and students",
+    },
+    {
       name: "Youtube video summarizer and library with AI",
       link: "https://github.com/HazemHassine/yt-summary",
-      status: "In going",
+      status: "Completed",
       description: "Enables you to summarize youtube videos, make an account and save your summaries and alot more to come. A full stack web application written in React.js and tailwind. Backend using Node.js and integration with firebase"
     },
     {
